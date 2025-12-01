@@ -191,16 +191,21 @@ class FaceClient(QtWidgets.QMainWindow):
         painter.drawText(
             QtCore.QRect(0, 40, pixmap.width(), 40),
             QtCore.Qt.AlignHCenter,
-            "Proyecto: BioFace Demo"
+            "Proyecto: Identificación facial"
         )
 
         # Integrantes
         font.setPointSize(12)
         font.setBold(False)
         painter.setFont(font)
-        integrantes_text = "Integrantes:\n- Marco Nina Aguilar\n- (Agregar más nombres aquí)"
+        integrantes_text = "Integrantes:\n " \
+        "- Kuan Becerra, Orlando José\n " \
+        "- León Pacheco, Alex Celestino\n " \
+        "- Minchán Ramos, Edwin Jhon\n " \
+        "- Montes Jaramillo, Victor Fernando\n " \
+        "- Marco Antonio, Nina Aguilar"
         painter.drawText(
-            QtCore.QRect(40, 120, pixmap.width() - 80, 80),
+            QtCore.QRect(40, 120, pixmap.width() - 100, 120),
             QtCore.Qt.AlignLeft | QtCore.Qt.AlignTop,
             integrantes_text
         )
